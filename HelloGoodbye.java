@@ -1,11 +1,12 @@
-
-
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.Stdout;
 
 public class HelloGoodbye {
     public static void main(String[] args) {
-
-        StdOut.println("Hello "+ args[0] + " and " + args[1] + ".");
-        StdOut.println("Goodbye "+ args[1] + " and " + args[0] + ".");
+        if (args.length == 2) {
+            Stdout.println("Hello " + args[0] + " " + args[1] + ".");
+            Stdout.println("Goodbye " + args[1] + " " + args[0] + ".");
+        } else {
+            Stdout.println("Usage: java HelloGoodbye <first_name> <last_name>");
+        }
     }
 }
